@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Filmes Favoritos</title>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.1/css/bulma.min.css">
+      <link rel="stylesheet" href="style.css" type="text/css" />
+   </head>
+   <body class="px-2">
+      
+      <div class="container">
+         <div class="row">
+            <div class="column is-9">
+               <h3 class="title mt-2 px-4">Meus Filmes Favoritos</h3>
+               <div class="box" action="#">
+                  <div class="field">
+                     <label class="label" for="inTitulo">Titulo do filme</label>
+                     <div class="control">
+                        <input class="input" type="text" name="titulo" id="inTitulo" placeholder="Ex: Homem Aranha" />
+                     </div>
+                  </div>
+                  <div class="field">
+                     <label class="label" for="inGenero">Genero</label>
+                     <div class="control">
+                        <input class="input" type="text" name="titulo" id="inGenero" placeholder="Ex: Ficção" />
+                     </div>
+                  </div>
+                  <div class="field">
+                     <div class="control is-flex is-justify-content-flex-end">
+                        <button class="button is-primary mt-5 right " id="btAdicionar">Adicionar</button>
+                     </div>
+                  </div>
+               </div> <!--form--->
+            </div>
+            <div class="column is-9">
+               <table class="table container">
+                  <thead class="top">
+                     <tr class="row">
+                        <th>Titulo do filme</th>
+                        <th>Gênero</th>
+                        <th class="th">
+                           <input type="checkbox" name="" id="ckTodos" value="" /><span>todos</span>
+                        </th>
+                     </tr>
+                  </thead>
+                  <tbody class="content is-primary" id="tbFilmes">
+                     <!-- <tr class="row">
+                        <td>O touro ferdinando</td>
+                        <td>Animacao</td> 
+                        <td><input type="checkbox" name="" id="btExcluir" /></td>
+                     </tr> -->
+                  </tbody>
+               </table>
+            </div>
+            
+            <div class="column is-9 m-0">
+               <div class="control is-flex is-justify-content-flex-end">
+                  <button class="button is-primary mr-4" id="btExcluir">Excluir Selecionados</button>
+               </div>
+            </div>
+            
+            
+         </div>
+      </div>
+      <script src="./main.js" type="text/javascript"></script>
+   </body>
+</html>
